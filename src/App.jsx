@@ -1,27 +1,27 @@
 import './App.css'
 
 // Child Component: Header
-const Header = ({ lastName }) => {
+function Header({ lastName }) {
   return (
     <header>
       <h1>{lastName}</h1>
     </header>
   );
-};
+}
 
 // Child Component: Box
-const Box = ({ code }) => {
+function Box({ code }) {
   return (
     <div className="pink-box">
       <p>{code}</p>
     </div>
   );
-};
+}
 
 // Parent Component: App
 function App() {
   const surname = "Villanueva";
-  const subjectCode = "CPEITEL";
+  const subjectCode = "C-PEITEL3";
 
   return (
     <div className="container">
